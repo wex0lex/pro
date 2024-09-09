@@ -4,7 +4,7 @@
 
 ## Install script for GNU/Linux & MacOS
 set -e
-path=/data/data/com.termux/files/usr/bin/
+path=/data/data/com.termux/files/usr/bin
 
 # >> Check if curl is installed or nor
 if ! command -V curl > /dev/null 2>&1; then
@@ -61,7 +61,7 @@ fi
 
 echo -e "Installed Successfully \n"
 
-if [[ $path != "/data/data/com.termux/files/usr/bin/" ]]; then
+if [[ $path != "/data/data/com.termux/files/usr/bin" ]]; then
     echo "Make sure your file is in PATH"
     echo "Run tgpt -h for help"
 else
